@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <!-- icons link -->
+    <script src="https://kit.fontawesome.com/6a975460b1.js" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css">
+    <!-- javascript link  -->
+    <script src="index.js"></script>
+</head>
+<body onload="">
+    <!-- header bar  -->
+    <header class="head-bar">
+        <div class="logo">
+            <i class="fa-solid fa-house fa-lg"></i>
+            <p>Logo</p>
+        </div>
+        <div class="icons">
+            <div class="icon-box"><i class="fa-solid fa-earth-americas fa-lg"></i></div>
+            <div class="icon-box"><i class="fa-solid fa-user fa-lg"></i></div>
+            <div class="icon-box"><i class="fa-solid fa-envelope fa-xl"></i></div>
+            <div class="icon-box"><i class="fa-solid fa-bell fa-lg" ></i></div>
+        </div>
+        <div class="small-profile">
+            <img src="img/profile.jpg" alt="not found">
+        </div>
+        <div class="side-bar-icon">
+            <button id="mybtn" onclick="myfunc(document.querySelector('#data').innerHTML,'150px')">
+                <i class="fa-solid fa-bars fa-xl" style="color : #884EA0 ;"></i></button>
+        </div>
+    </header>
+
+    <template id="data">
+        <div class="drower-icons-container">
+        <div class="drower-icons"><i class="fa-solid fa-earth-americas fa-lg"></i></div>
+        <div class="drower-icons"><i class="fa-solid fa-user fa-lg"></i></div>
+        <div class="drower-icons"><i class="fa-solid fa-envelope fa-xl"></i></div>
+        <div class="drower-icons"><i class="fa-solid fa-bell fa-lg" ></i></div></div>
+    </template>
+
+    <!-- body boxes -->
+    <section class="body-container fix-body">
+        <div class="box big-profile">
+            <div class="profile-topbox">
+                <center>
+                <p>My profile</p>
+                <div class="profile-img">
+                    <img src="img/big-prof-removebg-preview.png" style="height: auto; width: 90%;" alt="not found">
+                </div>
+            </div>
+        </center>
+            <div class="profile-options">
+                <div class="option padding1">
+                    <i class="fa-solid fa-pen fa-sm" style="color: #5a95ba;"></i>
+                    <p>Designer, UI</p> 
+                </div>
+                <div class="option padding2">
+                    <i class="fa-solid fa-location-dot fa-sm"  style="color: #5a95ba;"></i>
+                    <p>London, UK</p> 
+                </div>
+                <div class="option padding2">
+                    <i class="fa-solid fa-cake-candles fa-sm"  style="color: #5a95ba;" ></i>
+                    <p>April 1, 1988</p> 
+                </div>
+            </div>
+        </div>
+
+        <!-- btns on left side -->
+        <div class="box btns">
+            <button onclick="appear1();hideagain1()" class="leftbtn">
+                <i class="fa-solid fa-layer-group"></i>
+                <p>My Gourps</p>
+            </button>
+            <div id="Gourps" class="hidden-text">
+                some text1
+            </div>
+            <button onclick="appear2();hideagain2()" class="leftbtn">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>My Events</p>
+            </button>
+            <div  id="evens" class="hidden-text">
+                some text2
+            </div>
+            <button onclick="appear3();hideagain3()" class="leftbtn">
+                <i class="fa-solid fa-image"></i>
+                <p>My Photos</p>
+            </button>
+            <div  id="Photos" class="hidden-text">
+                some text3
+            </div>
+        </div>
+
+
+
+
+
+        <!-- type box -->
+        <div class="box type-bar">
+            <center>
+            <input id="type-input" type="text" placeholder="Status: Feeling Blue">
+        </center>   
+            <button class="send">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+        </div>
+        <!-- first result   -->
+        <div class="box result1">
+            <div class="result1-topbox">
+                <div class="img-container">             
+                   <img src="img/profile.jpg" style="border-radius: 50%;" alt="not found"><br>
+                    <p>John Doe</p></div>
+                <span>1 min</span>
+            </div>
+            <div class="result-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat</p>
+            </div>
+                <!-- result1 images -->
+                <img src="img/lights.jpg" alt="not found">
+                <img src="img/nature.jpg" alt="not found">
+                <div class="btn2-container" >
+                <button class="like-btn result-btn">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </button>
+                <button class="comments-btn result-btn">
+                    <i class="fa-solid fa-comments fa-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- result2 started  -->
+        <div class="box result2">    
+            <div class="result2-topbox">
+                <div class="img-container">             
+                   <img src="img/avatar5.png" style="border-radius: 50%;" alt="not found"><br>
+                    <p>John Doe</p></div>
+                <span>16 min</span>
+            </div>
+            <div class="result-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat</p>
+            </div>
+                <div class="btn2-container">
+                <button class="like-btn result-btn">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </button>
+                <button class="comments-btn result-btn">
+                    <i class="fa-solid fa-comments fa-lg"></i>
+                </button>
+           </div>
+        </div>
+
+        <!-- last result  -->
+        <div class="box result3">            
+            <div class="result3-topbox">
+             <div class="img-container">             
+               <img src="img/avatar6.png" style="border-radius: 50%;" alt="not found"><br>
+                <p>John Doe</p></div>
+            <span>32 min</span>
+        </div>
+        <div class="result-description">
+            <p>have seen this ?<br>
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat
+            </p>
+        </div>
+        <div class="img-box">
+            <img src="img/water.jpg" style="border-radius: 5px;width: 100% ; height: auto;" alt="not found">
+        </div>
+            <div class="result-btns">
+            <button class="like-btn result-btn">
+                <i class="fa-solid fa-heart fa-lg"></i>
+            </button>
+            <button class="comments-btn result-btn">
+                <i class="fa-solid fa-comments fa-lg"></i>
+            </button>
+        </div>
+        </div>
+
+        <!-- events started -->
+        <div class="box events">
+            <div class="topic">Upcoming Events:</div>   
+            <img class="event-img" src="img/forest.jpg" style="height: auto; width: 90%;" alt="not found">
+            <div class="event-description">
+                <p><h4>Holiday</h4><br>
+                Friday 15:00</p>
+            </div>
+            <button class="events-btn">info</button>
+        </div>
+
+         <!-- req box start -->
+        <div class="box request">
+            <div class="topic">Friend Request</div>
+            <img src="img/req.jpg" style="width: 80%; height: auto;" alt="not found">
+            
+            <div class="accept-buttoms">
+                <button class="acc-btn accept">accept</button>
+                <button class="acc-btn ignore">ignore</button>
+            </div>
+        </div>
+
+        <!-- ads box -->
+        <div class="box ads">Ads</div>
+
+        <!-- spider box -->
+        <div class="box spider">
+            <i class="fa-solid fa-spider fa-2xl" style="color: #000000;"></i>
+        </div>
+    
+            <!-- hidden box  -->
+       <div class="box hidden" id="hidden" >
+                <button class="hidden-btn" onclick="hide()"><i class="fa-solid fa-xmark fa-lg"></i></button>
+                <h4 id="hidden-header">Hey!</h4><br>
+                <p>People are looking at your profile. Find out who.</p>
+         </div>
+
+                 <!-- interests box  -->
+        <div class="box interests">
+            <p id="interests-header">interests</p>
+            <div class="tags-container">
+            <p class="tags">News</p>
+            <p class="tags">W3Schools</p>
+            <p class="tags">Labels</p>
+            <p class="tags">Games</p>
+            <p class="tags">Friends</p>
+            <p class="tags">Food</p>
+            <p class="tags">Design</p>
+        </div>
+        </div>
+    
+
+    </section>
+
+    <footer>
+        <div class="top-footer"><p>footer</p></div>
+        <div class="buttom-footer">powered by <a class="footer-a" href="#">W3.css</a></div>
+    </footer>
+
+    
+</body>
+</html>
